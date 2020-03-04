@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Söyle Gelsin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/app.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script type="text/javascript" src="/javascript/home.js"></script>
+</head>
+
+
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light #2b5ca2">
+        <a class="navbar-brand" href="#">Söyle Gelsin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" style="color: white;" href="Anasayfa">Anasayfa <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="bizeulasin">Bize Ulaşın</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " style="color: white;" href="sikayet">Şikayet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " style="color: white;" href="duyurular">Duyurular</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " style="color: white;" href="profilim">Profilim</a>
+                </li>
+            </ul>
+            <% veri.forEach(function(p){ %>
+            <li class=" nav-item">
+                <a class="nav-link " style="position: absolute;
+                left: 780px;
+                top: -10px;
+                font-size: 20px;
+                color: white;
+                font-family: fantasy;"><%=p.KullaniciAdi%></a>
+            </li>
+            <% }); %>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Mekan Ara" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Ara</button>
+                <div class="dropdown" style="    margin-left: 50px;">
+                    <span>Kategoriler</span>
+                    <div class="dropdown-content" style="color:black;">
+                        <a class="nav-link " style="color: white;     margin-top: -30px;" href="hamburger">Hamburger</a>
+                        <a class="nav-link " style="color: white;     margin-top: -30px;" href="balik">Balık</a>
+                        <a class="nav-link " style="color: white;     margin-top: -30px;" href="doner">Döner</a>
+                        <a class="nav-link " style="color: white;     margin-top: -30px;" href="pide">Pide</a>
+                        <a class="nav-link " style="color: white;     margin-top: -30px;" href="fastfood">Fast Food</a>
+                        <a class="nav-link " style="color: white;     margin-top: -30px;" href="pizza">Pizza</a>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div id="slider-wrapper">
+        <div class="inner-wrapper">
+            <input checked type="radio" name="slide" class="control" id="Slide1" />
+            <label for="Slide1" id="s1"></label>
+            <input type="radio" name="slide" class="control" id="Slide2" />
+            <label for="Slide2" id="s2"></label>
+            <input type="radio" name="slide" class="control" id="Slide3" />
+            <label for="Slide3" id="s3"></label>
+            <input type="radio" name="slide" class="control" id="Slide4" />
+            <label for="Slide4" id="s4"></label>
+            <div class="overflow-wrapper">
+                <a class="slide" href=""><img src="https://i.hizliresim.com/17ng1b.jpg" /></a>
+                <a class="slide" href=""><img src="https://i.hizliresim.com/LGonkz.jpg" /></a>
+                <a class="slide" href=""><img src="https://i.hizliresim.com/ryd2Wz.jpg" /></a>
+                <a class="slide" href=""><img src="https://i.hizliresim.com/oyz6Po.jpg" /></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-group ucluKart" style="    margin-top: -91px;
+    width: 1330px;
+    margin: 37px auto;">
+        <div class="card">
+            <img class="card-img-top" src="https://i.hizliresim.com/7Q8yVW.jpg" alt="Card image cap" />
+            <div class="card-body">
+                <h5 class="card-title" style="text-align:center">Moto Kurye Hizmeti</h5>
+                <p class="card-text">
+                    Kurye hizmetiyle siparişleriniz size gelsin.
+                </p>
+
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://i.hizliresim.com/PGEOYN.jpg" alt="Card image cap" />
+            <div class="card-body">
+                <h5 class="card-title" style="text-align:center">İster Telefondan</h5>
+                <p class="card-text">Telefonunuzdan anında sipariş verebilirsiniz.</p>
+
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://i.hizliresim.com/gbL94R.jpg" alt="Card image cap" />
+            <div class="card-body">
+                <h5 class="card-title" style="text-align:center">İster Bilgisayarınızdan</h5>
+                <p class="card-text">
+                    Nerede olursanız olun anında siparişinizi verin.
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="card card2 ">
+        <div class="card-header" style="margin: auto;">
+            Hakkımızda
+        </div>
+        <div class="card-body">
+            <blockquote class="blockquote mb-0" style="    margin-left: 560px;">
+                <p> Söyle Gelsin , anında sipariş verebileceğiniz </br> kolayca erişim sağlayacağınız,güvenli
+                    alışverişin </br>
+                    olduğu bir platformdur.
+                </p>
+                <footer class="blockquote-footer">Kurucu :<cite title="Source Title"> Batuhan Ağılgat</cite>
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+    <div class="sozlesme" style="    margin-left: 390px;">
+        <img src="https://i.hizliresim.com/gbL99Z.jpg" style="    margin-left: -200px;" />
+
+    </div>
+    <footer class="footer" style="background-color: #fc5c00;">
+        <div class="footer-left col-md-4 col-sm-6">
+            <p class="about">
+                <span> Söyle Gelsin</span> İstanbul'da nerede ne yenir? sorusunun cevabını,
+                sizlere yanıtlıyoruz. Sipariş sistemimizle birlikte siparişlerini alıp ,
+                sizlere her zaman hizmet veriyoruz.
+            </p>
+
+        </div>
+        <div class="footer-center col-md-4 col-sm-6">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Üsküdar 5450</span> İstanbul</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p> 0(216) 943 2323</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#"> soylegelsin@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right col-md-4 col-sm-6">
+            <img src="">
+            <p class="menu">
+                <a href="#"> Anasayfa</a> |
+                <a href="#"> Hakkımızda</a> |
+                <a href="#"> Sponsorlarımız</a> |
+                <a href="#"> Oturum Aç</a> |
+            </p>
+            <p class="name"> Soyle Gelsin &copy; 2020</p>
+        </div>
+    </footer>
+</body>
+
+</html>

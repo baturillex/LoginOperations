@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Oturum Aç</title>
+    <link rel="stylesheet" href="/css/oturumac.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script type="text/javascript" src="/javascript/home.js"></script>
+</head>
+
+<body>
+    <div class="container" id="container" style="    margin-top: 115px;width: 550px;">
+        <form action="/sifremiunuttum" method="POST" style="    margin-top: -30px;">
+
+            <div class="form-container sign-in-container">
+
+                <h1>Şifremi unuttum</h1>
+
+                <span>Chance password</span>
+                <input type="text" value="<%=Email%>" style="color:black;" name="eemailadi" />
+                <input type="text" value="<%=KullanıcıAdi%>" style="color:black;" name="kkullaniciadi" />
+                <input type="password" placeholder="Yeni Şifre" style="color:black;" name="sifre_forget" />
+
+                <button>Değiştir</button><a href="Login">Geri</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
